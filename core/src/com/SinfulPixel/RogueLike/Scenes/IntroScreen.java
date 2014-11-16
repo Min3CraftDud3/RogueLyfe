@@ -15,6 +15,7 @@ import com.badlogic.gdx.utils.Timer;
 
 /**
  * Created by Min3 on 11/13/2014.
+ * Testing Git Setup
  */
 public class IntroScreen implements com.badlogic.gdx.Screen {
     private int scrWidth = RogueLike.width;
