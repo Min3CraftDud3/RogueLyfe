@@ -38,6 +38,7 @@ public class Configuration {
         c.setFpsCap(30);
         c.setHeight(720);
         c.setWidth(1280);
+        c.setShowFPS(true);
         try{
             String xml = xs.toXML(c);
             fos = new FileOutputStream(file);
@@ -68,9 +69,11 @@ public class Configuration {
             String configFile = dataFolder + "config.xml";
             FileInputStream fis = null;
             try {
+                int boolValue = 0;
                 fis = new FileInputStream(configFile);
                 cfg c = (cfg) xs.fromXML(fis);
-                int[] in = {c.getHeight(), c.getWidth()};
+                if(c.getShowFPS()==true){boolValue=1;}else if(c.getShowFPS()==false){boolValue=0;}
+                int[] in = {c.getHeight(), c.getWidth(),boolValue};
                 return in;
             }catch(Exception e){}
         }

@@ -9,16 +9,19 @@ public class cfg {
     private int fpsCap = 30;
     private int soundsVolume = 100;
     private int musicVolume = 100;
+    private boolean showFPS = true;
 
     public int getHeight(){return this.height;}
     public int getWidth(){return this.width;}
     public int getFpsCap(){return this.fpsCap;}
     public int getSoundsVolume(){return this.soundsVolume;}
     public int getMusicVolume(){return this.musicVolume;}
+    public boolean getShowFPS(){return this.showFPS;}
     public void setHeight(int h){this.height = h;}
     public void setWidth(int w){this.width = w;}
     public void setFpsCap(int fps){this.fpsCap = fps;}
     public void setSoundsVolume(int vol){this.soundsVolume = vol;}
     public void setMusicVolume(int vol){this.musicVolume = vol;}
+    public void setShowFPS(boolean bool){this.showFPS = bool;}
 
 }

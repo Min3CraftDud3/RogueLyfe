@@ -26,6 +26,10 @@ public enum Screen {
         @Override
         protected com.badlogic.gdx.Screen getScreenInstance(){ return new OptionsScreen(); }
     },
+    PAUSE{
+        @Override
+        protected com.badlogic.gdx.Screen getScreenInstance(){ return new PauseScreen(); }
+    },
     CREDITS{
         @Override
         protected com.badlogic.gdx.Screen getScreenInstance(){

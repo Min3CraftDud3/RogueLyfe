@@ -1,5 +1,7 @@
 package com.SinfulPixel.RogueLike.Scenes;
 
+import com.badlogic.gdx.Gdx;
+
 /**
  * Created by Min3 on 11/13/2014.
  */
@@ -16,7 +18,7 @@ public class CreditsScreen implements com.badlogic.gdx.Screen {
 
     @Override
     public void show() {
-
+        Gdx.app.log("Credits: ","Attached");
     }
 
     @Override
